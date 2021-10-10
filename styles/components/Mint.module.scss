@@ -1,0 +1,74 @@
+section.mint {
+	margin-top: 10rem;
+
+	.card {
+		width: 90%;
+		background-color: white;
+		color: #251f4b;
+
+		display: flex;
+		margin: auto;
+		padding: 3rem;
+		padding-bottom: 0;
+		border: 1.53px solid #150000;
+		border-radius: 30px;
+
+		img {
+			width: 35rem;
+		}
+
+		.container {
+			margin-left: 3rem;
+			display: flex;
+			justify-content: center;
+			align-items: start;
+			flex-direction: column;
+
+			h4 {
+				font-style: normal;
+				font-weight: normal;
+				font-size: 20px;
+				line-height: 29px;
+				letter-spacing: 1px;
+				color: #e76847;
+			}
+
+			h3 {
+				font-weight: bold;
+				font-size: 30px;
+				line-height: 41px;
+				margin: 1.5rem 0;
+
+				letter-spacing: 1px;
+
+				color: #3f1c63;
+			}
+
+			p {
+				font-size: 14px;
+				line-height: 172.19%;
+
+				color: #251f4b;
+			}
+
+			ul {
+				list-style: none;
+				line-height: 34px;
+				letter-spacing: -0.2px;
+				color: #373449;
+
+				li {
+					margin: 2rem 0;
+					font-size: 13px;
+					display: grid;
+					grid-template-columns: min-content 1fr;
+					gap: 1.5rem;
+
+					svg {
+						transform: scale(0.8);
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,94 @@
+section.section {
+	text-align: center;
+
+	// ?: Roadmap
+	.img {
+		width: 80rem;
+		margin: auto;
+		display: block;
+	}
+
+	h4 {
+		font-weight: 500;
+		font-size: 25px;
+		line-height: 38px;
+		/* identical to box height, or 154% */
+
+		color: #8b53ff;
+
+		mix-blend-mode: normal;
+	}
+
+	h2 {
+		font-weight: 600;
+		font-size: 45px;
+		line-height: 38px;
+		/* identical to box height, or 77% */
+
+		text-align: center;
+
+		mix-blend-mode: normal;
+		background: linear-gradient(306.64deg, rgba(255, 41, 105, 0.45) 27.07%, rgba(247, 122, 28, 0.45) 71.29%),
+			linear-gradient(0deg, #f28f33, #f28f33), linear-gradient(54.79deg, #622ada -1.97%, #3dffff 110.27%),
+			linear-gradient(0deg, #274b94, #274b94);
+
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		padding: 3rem 0;
+	}
+
+	hr {
+		width: 72px;
+		border: 1px solid #f57c36;
+		border-bottom: none;
+		margin: auto;
+		margin-bottom: 3rem;
+	}
+
+	// ?: rarities
+	.header {
+		font-weight: 600;
+		font-size: 45px;
+		line-height: 62px;
+
+		background: linear-gradient(96.1deg, #9327ff 4.83%, #00b6e9 87.78%),
+			linear-gradient(306.64deg, rgba(255, 41, 105, 0.45) 27.07%, rgba(247, 122, 28, 0.45) 71.29%),
+			linear-gradient(0deg, #f28f33, #f28f33), linear-gradient(0deg, #ffffff, #ffffff);
+
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		padding: 3rem 0;
+	}
+
+	p {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 35px;
+		width: 85%;
+		margin: auto;
+
+		text-align: center;
+
+		color: #dceaff;
+	}
+
+	.rarityImg {
+		width: 20rem;
+		margin: 5rem 0.8rem;
+	}
+
+	// ?: team
+
+	.teamHeader {
+		font-weight: 600;
+		font-size: 35px;
+		line-height: 58px;
+		margin-bottom: 3rem;
+
+		text-align: center;
+	}
+
+	.teamImg {
+		width: 100%;
+	}
+}
