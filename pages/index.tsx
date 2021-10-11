@@ -1,3 +1,4 @@
+import Head from "next/head";
 import type { NextPage } from "next";
 import { FormEvent, useEffect, useState } from "react";
 import { useAppContext } from "../wrapper/ContextWrapper";
@@ -101,6 +102,10 @@ const Home: NextPage = () => {
 
 	return (
 		<>
+			<Head>
+				<title>NFT Builder</title>
+				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+			</Head>
 			<Landing />
 			<Mint submitHandler={submitHandler} />
 			<OtherSections />
