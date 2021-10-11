@@ -1,7 +1,20 @@
+import { FormEvent } from "react";
 import styles from "../styles/components/Mint.module.scss";
+import { useAppContext } from "../wrapper/ContextWrapper";
 import Button from "./UI/Button";
 
-export default function Mint() {
+interface Props {
+	submitHandler: (event: FormEvent) => Promise<void>;
+}
+
+export default function Mint({ submitHandler }: Props) {
+	const { provider } = useAppContext();
+	console.log(provider);
+
+	const noProviderHandler = (event: FormEvent) => {
+		event.preventDefault();
+	};
+
 	return (
 		<section className={styles.mint} id="mint">
 			<div className={styles.card}>
@@ -11,13 +24,14 @@ export default function Mint() {
 					<h4>MINT</h4>
 					<h3>HOW TO BUY</h3>
 					<p>Here is a brief informative video breaking down how to buy Life Token.</p>
-
 					<ul>
 						<MintItem content="If the video was unclear or if you cant understand something please let us know" />
 						<MintItem content="If you have any questions please do not hesitate to contact us at the bottom of the website." />
 					</ul>
 
-					<Button>Mint now</Button>
+					<form onSubmit={provider ? submitHandler : noProviderHandler}>
+						<Button>Mint now</Button>
+					</form>
 				</div>
 			</div>
 		</section>
