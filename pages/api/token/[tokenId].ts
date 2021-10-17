@@ -6,23 +6,23 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 
 	switch (+id % 5) {
 		case 0:
-			image = `https://cdn.discordapp.com/attachments/896630396903624714/897009707162685480/1272810_dTXuf6if.png`;
+			image = `https://cdn.discordapp.com/attachments/896630396903624714/899293774121934858/unknown.png`;
 			break;
 
 		case 1:
-			image = `https://cdn.discordapp.com/attachments/896630396903624714/897009777585057822/1272810_llZrCSA1.png`;
+			image = `https://cdn.discordapp.com/attachments/896630396903624714/899293782284046386/unknown.png`;
 			break;
 
 		case 2:
-			image = `https://cdn.discordapp.com/attachments/896630396903624714/897009860846182410/1272810_tGU6Zgj9.png`;
+			image = `https://cdn.discordapp.com/attachments/896630396903624714/899293782602825768/unknown.png`;
 			break;
 
 		case 3:
-			image = `https://cdn.discordapp.com/attachments/896630396903624714/897009945759846400/1272810_l30SMrWy.png`;
+			image = `https://cdn.discordapp.com/attachments/896630396903624714/899293791368921128/unknown.png`;
 			break;
 
 		default:
-			image = `https://cdn.discordapp.com/attachments/896630396903624714/897010080568971294/1272810_Ah93MEQ9.png`;
+			image = `https://cdn.discordapp.com/attachments/896630396903624714/899293794783072276/unknown.png`;
 			break;
 	}
 
